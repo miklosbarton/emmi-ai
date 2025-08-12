@@ -10,7 +10,7 @@ const CORE = () => {
 
     <main>
       <section>
-        <div className="max-w-screen-xl mx-auto p-20 border-l border-r border-l-border border-r-border">
+        <div className="max-w-screen-2xl mx-auto p-20 border-l border-r border-l-border border-r-border">
           {/* Header */}
           <div className="text-center mb-16">
             <h1 className="text-6xl max-w-3xl mx-auto text-foreground mb-8">
@@ -28,7 +28,7 @@ const CORE = () => {
       </section>
 
       <section className="border-t border-t-border">
-        <div className="max-w-screen-xl justify-center mx-auto p-10 lg:p-20 border-l border-r border-l-border border-r-border">
+        <div className="max-w-screen-2xl justify-center mx-auto p-10 lg:p-20 border-l border-r border-l-border border-r-border">
           <div className="text-center space-y-4 max-w-2xl mx-auto">
             <h2 className="text-5xl">Build and Run Physics Simulations, all in one toolkit</h2>
             <p className="text-muted-foreground max-w-lg mx-auto text-lg">Our SDK makes it easy to create and run complex physics simulations by guiding users through five essential steps:</p>
@@ -51,7 +51,7 @@ const CORE = () => {
       </section>
 
       <section>
-        <div className="max-w-screen-xl mx-auto p-20 border-l border-r border-l-border border-r-border space-y-20">
+        <div className="max-w-screen-2xl mx-auto p-20 border-l border-r border-l-border border-r-border space-y-20">
           <div className="grid grid-cols-2 gap-20">
             <div className="aspect-video bg-muted"></div>
             <div>

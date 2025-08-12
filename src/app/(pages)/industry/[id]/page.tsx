@@ -12,6 +12,7 @@ import {
     BreadcrumbPage,
     BreadcrumbSeparator,
 } from "@/components/ui/breadcrumb"
+import ImagePlaceholder from "@/components/imagePlaceholder";
 
 
 export const generateStaticParams = () => {
@@ -81,7 +82,7 @@ export default async function IndustryPage(props: { params: paramsType }) {
                 8. **Trust Indicators** */}
             <section>
                 <div className="max-w-screen-2xl mx-auto p-20 border-l border-r border-l-border border-r-border">
-                    <div className=" bg-linear-to-tl from-purple-400 via-indigo-500 to-violet-600  flex justify-center items-center p-10 min-h-[500px] text-muted-foreground">Visualization of power transformer</div>
+                    <ImagePlaceholder className="w-full aspect-video" />
                 </div>
             </section>
             <section>
