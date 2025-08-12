@@ -68,8 +68,8 @@ export default async function ModelDetailPage(props: { params: paramsType }) {
 
     return (
         <main className="w-full">
-            <section className="relative min-h-screen">
-                <div className="relative p-20 border-l border-r border-l-border border-r-border max-w-screen-2xl mx-auto z-20">
+            <section className="relative">
+                <div className="relative h-screen p-20 border-l border-r border-l-border border-r-border max-w-screen-2xl mx-auto z-20">
                     <Breadcrumb>
                         <BreadcrumbList>
                             <BreadcrumbItem>
@@ -96,10 +96,8 @@ export default async function ModelDetailPage(props: { params: paramsType }) {
                         </div>
                     </div>
                 </div>
-                 <div className="w-full min-h-screen absolute left-0 right-0 top-0 z-10 flex justify-center items-center p-10 text-muted-foreground">
-                    <Spline className="w-full h-full"
-        scene="https://prod.spline.design/im7LJHTcZsCiMVO0/scene.splinecode" 
-      />
+                 <div className="w-full h-screen absolute inset-0 z-0 flex justify-center items-center px-20 border-l border-r border-l-border border-r-border">
+                    <Spline className="w-full h-full opacity-50" scene="https://prod.spline.design/im7LJHTcZsCiMVO0/scene.splinecode" />
 
                  </div>
                 
