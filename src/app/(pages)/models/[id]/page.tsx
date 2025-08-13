@@ -1,7 +1,7 @@
 
 import { ModelsData } from "@/app/data/models"
 import { Button } from "@/components/ui/button";
-import { Copy, SlashIcon } from "lucide-react"
+import { CheckCircle2, Copy, SlashIcon } from "lucide-react"
 
 import {
     Breadcrumb,
@@ -22,7 +22,7 @@ export const generateStaticParams = () => {
 };
 
 import Spline from '@splinetool/react-spline/next';
- 
+
 export type paramsType = Promise<{ id: string }>;
 
 type Model = {
@@ -96,19 +96,40 @@ export default async function ModelDetailPage(props: { params: paramsType }) {
                         </div>
                     </div>
                 </div>
-                 <div className="w-full h-screen absolute inset-0 z-0 flex justify-center items-center px-20 border-l border-r border-l-border border-r-border">
+                <div className="w-full h-screen absolute inset-0 z-0 flex justify-center items-center px-20 border-l border-r border-l-border border-r-border">
                     <Spline className="w-full h-full opacity-50" scene="https://prod.spline.design/im7LJHTcZsCiMVO0/scene.splinecode" />
 
-                 </div>
-                
+                </div>
+
             </section>
-            
+
+
             <section>
                 <div className="max-w-screen-2xl mx-auto px-20 pb-20 border-l border-r border-l-border border-r-border">
                     <h2 className="text-5xl max-w-xl mb-4">{model.overview_title}</h2>
-                    <p className="text-xl text-muted-foreground mb-4 max-w-xl">{model.overview_content}</p>
+                    <p className="text-xl text-muted-foreground mb-4 max-w-xl">AERO Cars provides state-of-the-art neural network models trained on extensive automotive CFD data.</p>
+                    <ul className="flex flex-col space-y-4 mt-8">
+                        <li className="flex gap-2 items-center"><CheckCircle2 className="fill-muted-foreground stroke-background"/> 1000x faster aerodynamic predictions</li>
+                        <li className="flex gap-2 items-center"><CheckCircle2 className="fill-muted-foreground stroke-background"/> Real-time design optimization</li>
+                        <li className="flex gap-2 items-center"><CheckCircle2 className="fill-muted-foreground stroke-background"/> Virtual testing</li>
+                        <li className="flex gap-2 items-center"><CheckCircle2 className="fill-muted-foreground stroke-background"/> In-vehicle applications</li>
+                    </ul>
                 </div>
             </section>
+
+            <section className="">
+                <div className="max-w-screen-2xl mx-auto p-20 border border-border grid grid-cols-3">
+                    {
+                        model.metrics.map((metric, idx) => (
+                            <div key={idx} className="flex items-center gap-4 justify-center">
+                                <span className="text-6xl">{metric.number}</span>
+                                <p className="text-muted-foreground max-w-[16ch]">{metric.label}</p>
+                            </div>
+                        ))
+                    }
+                </div>
+            </section>
+
             <section>
                 <div className="max-w-screen-2xl mx-auto p-20 border-l border-r border-l-border border-r-border space-y-8">
                     <h2 className="text-2xl"> Key capabilities</h2>
@@ -118,7 +139,6 @@ export default async function ModelDetailPage(props: { params: paramsType }) {
                                 <div key={idx} className="flex flex-col space-y-4 border-l border-border p-10">
                                     <p className="text-xs uppercase text-muted-foreground">{capability.title}</p>
                                     <span className="text-4xl max-w-[14ch]">{capability.label}</span>
-
                                 </div>
                             ))
                         }
@@ -199,18 +219,6 @@ export default async function ModelDetailPage(props: { params: paramsType }) {
 
                 </section>
 
-                <div className="max-w-screen-2xl mx-auto p-20 border-l border-r border-l-border border-r-border">
-                    <div className="grid grid-cols-3">
-                        {
-                            model.metrics.map((metric, idx) => (
-                                <div key={idx} className="flex items-center gap-4 justify-center">
-                                    <span className="text-6xl font-light">{metric.number}</span>
-                                    <p className="text-muted-foreground max-w-[16ch]">{metric.label}</p>
-                                </div>
-                            ))
-                        }
-                    </div>
-                </div>
 
                 <div className="max-w-screen-2xl mx-auto p-20 border-l border-r border-l-border border-r-borde text-center justify-cente space-y-8">
                     <h2 className="text-xl text-muted-foreground">{model.success_title}</h2>
