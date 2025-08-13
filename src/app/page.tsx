@@ -50,8 +50,8 @@ export default function Home() {
           <h1 className="text-4xl lg:text-8xl lg:max-w-4xl mx-auto font-light">Enabling data-driven AI for Engineering</h1>
           <p className="max-w-2xl mx-auto text-xl lg:text-2xl text-muted-foreground font-light leading-relaxed">Our AI-Powered physics architecture and models unlock real-time interaction, slashing simulation times from days to seconds.</p>
           <div className="flex space-x-4 mx-auto w-fit">
-            <Button className="mt-4" variant="secondary" size="lg"><a href="/industry">Read docs</a></Button>
-            <Button className="mt-4" variant="default" size="lg"><a href="/industry">Contact us</a></Button>
+            <Button className="mt-4" variant="secondary" size="lg"><a href="/core">Discover our SDK</a></Button>
+            <Button className="mt-4" variant="default" size="lg"><a href="/models">View AI Models</a></Button>
           </div>
         </div>
       </section>
