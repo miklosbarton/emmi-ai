@@ -6,15 +6,15 @@ const Footer = () => {
     {
       title: "CORE SDK",
       links: [
-        { name: "Data Management", href: "#" },
-        { name: "Training", href: "#" },
-        { name: "Inference", href: "#" },
+        { name: "Data Management", href: "/data/data-management" },
+        { name: "Training", href: "/data/training" },
+        { name: "Inference", href: "/data/inference" },
       ]
     },
     {
-      title: "Models",
+      title: "AI Models",
       links: [
-        { name: "AERO Cars", href: "/models/vision-models" },
+        { name: "AERO Cars", href: "/models/aero-cars" },
         { name: "AERO Planes", href: "#" },
         { name: "AERO Drones", href: "#" },
         { name: "FLOW", href: "#" },
@@ -23,16 +23,7 @@ const Footer = () => {
       ]
     },
     {
-      title: "Physics",
-      links: [
-        { name: "Fluid Dynamics (CFD)", href: "#" },
-        { name: "Thermodynamics", href: "#" },
-        { name: "Structural Mechanics", href: "#" },
-        { name: "Electromagnetics", href: "#" }
-      ]
-    },
-    {
-      title: "Industries",
+      title: "Solutions",
       links: [
         { name: "Energy", href: "/industry/energy" },
         { name: "Aerospace", href: "/industry/aerospace" },
@@ -46,9 +37,10 @@ const Footer = () => {
       title: "Resources",
       links: [
         { name: "About", href: "/about" },
-        { name: "Research", href: "/research" },
         { name: "News", href: "/news" },
-        { name: "Careers", href: "/careers" }
+        { name: "Research", href: "/research" },
+        { name: "Careers", href: "/careers" },
+        { name: "Contact", href: "/contact" }
       ]
     }
   ];

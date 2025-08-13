@@ -20,7 +20,7 @@ const items: AccordionItem[] = [
     },
     {
         title: "Meshing",
-        description: "Description for feature two.",
+        description: "No meshing pipeline – direct CAD → prediction. State-of-the-art accuracy for surface and volume fields on automotive CFD simulations ranging from 33K up to 150M mesh cells.",
         image: "/images/feature2.jpg",
     },
     {

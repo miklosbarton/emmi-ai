@@ -75,19 +75,19 @@ export default function Home() {
         <div className="mx-auto max-w-screen-2xl border-l border-l-border border-r border-r-border grid lg:grid-cols-3 gap-x-20 p-10 py-20 lg:p-20">
 
           <div className="space-y-3">
-            <ImagePlaceholder className="w-full aspect-square"/>
+            <a href="/sdk"><ImagePlaceholder className="w-full aspect-square"/></a>
             <h2 className="text-2xl mt-8">SDK</h2>
             <p className="text-muted-foreground max-w-2xl mb-8 leading-relaxed"><span className="text-foreground">Build smarter, faster with less friction</span> — Our SDKs give you everything you need to seamlessly integrate advanced AI into your apps, products, and workflows.</p>
-            <Button variant="secondary"><a href="/data">Learn more</a></Button>
+            <Button variant="secondary"><a href="/sdk">Learn more</a></Button>
           </div>
           <div className="space-y-3">
-            <ImagePlaceholder className="w-full aspect-square"/>
+            <a href="/data"><ImagePlaceholder className="w-full aspect-square"/></a>
             <h2 className="text-2xl mt-8">Datasets</h2>
             <p className="text-muted-foreground max-w-2xl mb-8 leading-relaxed"><span className="text-foreground">Smart, adaptive data models built for you</span> — Our data models are designed to do more than crunch numbers they understand your world.</p>
             <Button variant="secondary"><a href="/data">Learn more</a></Button>
           </div>
           <div className="space-y-3">
-            <ImagePlaceholder className="w-full aspect-square"/>
+            <a href="/models"><ImagePlaceholder className="w-full aspect-square"/></a>
             <h2 className="text-2xl mt-8">AI Models</h2>
             <p className="text-muted-foreground max-w-2xl mb-8 leading-relaxed"><span className="text-foreground">Breakthrough performance</span> — Built for engineers and researchers, it empowers rapid prototyping and decision-making without compromising on accuracy.</p>
             <Button variant="secondary"><a href="/models">Learn more</a></Button>

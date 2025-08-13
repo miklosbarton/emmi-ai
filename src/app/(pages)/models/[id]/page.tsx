@@ -98,7 +98,6 @@ export default async function ModelDetailPage(props: { params: paramsType }) {
                 </div>
                 <div className="w-full h-screen absolute inset-0 z-0 flex justify-center items-center px-20 border-l border-r border-l-border border-r-border">
                     <Spline className="w-full h-full opacity-50" scene="https://prod.spline.design/im7LJHTcZsCiMVO0/scene.splinecode" />
-
                 </div>
 
             </section>
