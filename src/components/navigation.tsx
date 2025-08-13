@@ -132,11 +132,11 @@ export default function Navigation() {
                                         <p className="text-muted-foreground text-sm leading-tight mb-4">
                                             Smart, adaptive Data Models
                                         </p>
-                                        <Button><a href="/data">Discover all</a></Button>
+                                        <Button>Discover all</Button>
                                     </a>
                                 </NavigationMenuLink>
                             </li>
-                            <ListItem href="/data/wings" title="AERO Wind">
+                            <ListItem href="/data/wings" title="AERO Wings">
                                 Comprehensive CFD data for aircraft wing design and optimization
                             </ListItem>                            
                         </ul>
@@ -150,7 +150,7 @@ export default function Navigation() {
                                 <NavigationMenuLink asChild>
                                     <a
                                         className="bg-muted flex h-full w-full flex-col justify-end rounded-md p-6 no-underline outline-hidden select-none focus:shadow-md"
-                                        href="/core"
+                                        href="/models"
                                     ><ImagePlaceholder className="w-full h-[200px]"/>
                                         <div className="mt-4 text-xl font-medium">
                                            Our AI Models
@@ -158,7 +158,7 @@ export default function Navigation() {
                                         <p className="text-muted-foreground text-sm leading-tight mb-4">
                                             Lorem ipsum dolor sit amet
                                         </p>
-                                        <Button><a href="/models">Discover all</a></Button>
+                                        <Button>Discover all</Button>
                                     </a>
                                 </NavigationMenuLink>
                             </div>
@@ -198,7 +198,7 @@ export default function Navigation() {
                                 <NavigationMenuLink asChild>
                                     <a
                                         className="bg-muted flex h-full w-full flex-col justify-end rounded-md p-6 no-underline outline-hidden select-none focus:shadow-md"
-                                        href="/core"
+                                        href="/models"
                                     ><ImagePlaceholder className="w-full h-[200px]"/>
                                         <div className="mt-4 text-xl font-medium">
                                            Read our success stories
@@ -206,7 +206,7 @@ export default function Navigation() {
                                         <p className="text-muted-foreground text-sm leading-tight mb-4">
                                             Lorem ipsum dolor sit amet
                                         </p>
-                                        <Button><a href="/models">Discover all</a></Button>
+                                        <Button>Discover all</Button>
                                     </a>
                                 </NavigationMenuLink>
                             </div>
